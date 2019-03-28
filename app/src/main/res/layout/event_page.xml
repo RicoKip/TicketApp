@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/eventDate2"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/eventLocation"
+        app:layout_constraintEnd_toStartOf="@+id/eventDesc"
+        app:layout_constraintStart_toEndOf="@+id/imgaeCalendar"
+        app:layout_constraintTop_toBottomOf="@+id/eventName2" />
+
+    <ImageView
+        android:id="@+id/eventImgaeView"
+        android:layout_width="389dp"
+        android:layout_height="234dp"
+        android:layout_marginBottom="9dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/eventName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="ice_cream_sandwich" />
+
+    <EditText
+        android:id="@+id/eventName2"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/eventDate2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventImgaeView"
+        android:textAlignment="center"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/eventDesc"
+        android:layout_width="170dp"
+        android:layout_height="154dp"
+        android:layout_marginBottom="59dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="@string/eventDesc"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eventDate2"
+        app:layout_constraintTop_toBottomOf="@+id/eventName2" />
+
+    <ImageView
+        android:id="@+id/imgaeCalendar"
+        android:layout_width="41dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageLocation"
+        app:layout_constraintEnd_toStartOf="@+id/eventDate2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventName2"
+        app:srcCompat="@drawable/ic_events"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageLocation"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="99dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/eventLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgaeCalendar"
+        app:srcCompat="@drawable/ic_location"
+        tools:ignore="VectorDrawableCompat" />
+
+    <EditText
+        android:id="@+id/eventLocation"
+        android:layout_width="119dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="73dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/eventDesc"
+        app:layout_constraintStart_toEndOf="@+id/imageLocation"
+        app:layout_constraintTop_toBottomOf="@+id/eventDate2" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/event_card_layout"
+    android:background="@color/cardoutline">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/EventCard">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textAlignment="center"/>
+
+            <RelativeLayout
+                android:id="@+id/card_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/event_title">
+
+                <ImageView
+                    android:id="@+id/eventImageCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:targetApi="ice_cream_sandwich"
+                    android:scaleType="centerCrop"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/content_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_image">
+                <RelativeLayout
+                    android:id="@+id/bottom_text_left"
+                    android:layout_height="wrap_content"
+                    android:layout_width="250dp"
+
+                    android:gravity="left">
+
+                    <RelativeLayout
+                        android:id="@+id/event_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:id="@+id/event_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="5dp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/event_Layout_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/event_layout_name"
+                        android:layout_marginTop="4dp">
+
+                        <TextView
+                            android:id="@+id/event_Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="5dp"/>
+
+                        <TextView
+                            android:id="@+id/ticket_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="16dp"
+                            android:textSize="15sp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="16dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/button_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_toRightOf="@+id/bottom_text_left"
+                    android:layout_marginTop="10dp">
+                    <Button
+                        android:id="@+id/book_event"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:text="BOOK NOW"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

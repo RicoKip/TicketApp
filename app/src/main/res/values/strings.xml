@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">TicketApp</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="if_new_user_register_here">IF NEW USER REGISTER HERE</string>
+    <string name="todo">TODO</string>
+    <string name="register">REGISTER</string>
+    <string name="email">Email</string>
+
+    <string name="first_name">First Name</string>
+
+    <string name="last_name">Last Name</string>
+    <string name="submit">SUBMIT</string>
+    <string name="if_you_are_an_existing_user_login_here">IF YOU ARE AN EXISTING USER LOGIN HERE</string>
+    <string name="events">Events</string>
+    <string name="account">Account</string>
+    <string name="tickets">Tickets</string>
+    <string name="payment">Payment</string>
+    <string name="cart">Cart</string>
+    <string name="logout">Logout</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="edit_user_detils_or_view_personal_data_to_update_information_edit_the_text_fields_and_hit_update_button">Edit user detils or view personal data. To update information edit the text fields and hit update button.</string>
+    <string name="show_password">Show Password</string>
+    <string name="update">UPDATE</string>
+    <string name="eventDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="remove_item">REMOVE ITEM</string>
+    <string name="checkout">CHECKOUT</string>
+    <string name="cart_title">CART</string>
+    <string name="continue_shopping">CONTINUE SHOPPING</string>
+    <string name="delete">DELETE</string>
+    <string name="back">BACK</string>
+    <string name="tax">TAX:</string>
+    <string name="sum">SUM:</string>
+    <string name="sum_total">SUM TOTAL</string>
+    <string name="expiry_date">EXPIRY DATE</string>
+    <string name="name_on_card">NAME ON CARD</string>
+    <string name="card_number_title">CARD NUMBER</string>
+    <string name="mm_yy">MM / YY</string>
+    <string name="security_code_cvs">SECURITY CODE/ CVS</string>
+    <string name="xxx">***</string>
+    <string name="pay">PAY</string>
+    <string name="cardnumber">**** **** **** ****</string>
+    <string name="accountTitle">ACCOUNT</string>
+    <string name="cvs">CVS</string>
+    <string name="john_doe">John Doe</string>
+    <string name="cvs_code">CVS CODE</string>
+    <string name="_123">123</string>
+    <string name="total">TOTAL</string>
+    <string name="Tickets_Title">TICKETS</string>
+
+</resources>

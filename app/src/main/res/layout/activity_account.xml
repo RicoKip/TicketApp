@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/imageView"
+        android:layout_width="379dp"
+        android:layout_height="77dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray"
+        android:contentDescription="@string/todo"
+        tools:ignore="VectorDrawableCompat"
+        tools:targetApi="ice_cream_sandwich">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/accountTitle"
+            android:textAlignment="center"
+            android:textSize="45sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/user_details"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp" />
+
+    <Button
+        android:id="@+id/updateBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/user_details"
+        android:layout_marginTop="5dp"
+        android:text="@string/back" />
+
+
+
+
+
+</RelativeLayout>

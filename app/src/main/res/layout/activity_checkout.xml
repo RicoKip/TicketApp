@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Checkout">
+
+
+    <TextView
+        android:id="@+id/cardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="53dp"
+        android:text="@string/name_on_card" />
+
+    <EditText
+        android:id="@+id/cardNameTXT"
+        android:layout_width="338dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/cardName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="@string/john_doe"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/cardNumber"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardNameTXT"
+        android:layout_alignStart="@+id/cardName"
+        android:layout_marginTop="8dp"
+        android:text="@string/card_number_title"
+        android:layout_alignLeft="@+id/cardName" />
+
+    <EditText
+        android:id="@+id/cardNumberTXT"
+        android:layout_width="338dp"
+
+        android:layout_height="55dp"
+        android:layout_below="@id/cardNumber"
+        android:layout_alignStart="@+id/cardName"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="@string/cardnumber"
+        android:inputType="number"
+        android:layout_alignLeft="@+id/cardName" />
+
+    <TextView
+        android:id="@+id/expiryDate"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardNumberTXT"
+        android:layout_alignStart="@+id/cardName"
+        android:layout_marginTop="8dp"
+        android:text="@string/expiry_date"
+        android:layout_alignLeft="@+id/cardName" />
+
+    <EditText
+        android:id="@+id/expiryDateTXT"
+        android:layout_width="150dp"
+
+        android:layout_height="55dp"
+        android:layout_below="@id/expiryDate"
+        android:layout_alignStart="@+id/cardName"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="@string/mm_yy"
+        android:inputType="date"
+        android:layout_alignLeft="@+id/cardName" />
+
+    <TextView
+        android:id="@+id/cvsCode"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expiryDateTXT"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cvs_code" />
+
+    <EditText
+        android:id="@+id/cvsCodeTXT"
+        android:layout_width="150dp"
+
+        android:layout_height="55dp"
+        android:layout_below="@id/cvsCode"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="@string/_123"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/totalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvsCodeTXT"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/expiryDateTXT"
+        android:text="@string/total"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/expiryDateTXT" />
+
+    <TextView
+        android:id="@+id/totalDisplayTXT"
+        android:layout_width="81dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/totalTitle"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/expiryDateTXT"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/expiryDateTXT" />
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalDisplayTXT"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/expiryDateTXT"
+        android:text="@string/pay"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/expiryDateTXT" />
+
+</RelativeLayout>
